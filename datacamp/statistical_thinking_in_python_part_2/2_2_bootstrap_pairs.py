@@ -2,21 +2,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-'''
-resample : randomly select an element from the original array and stored in new array, repeat the process
-			(so the new array can have the same element more than once)
-			
-bootstrap sample = A resampled arrey of the data
-bootstrap replicate : A statistic computed from a resampled array
-
-Then if we have a lot of bootstrap samples we can look at the pdf of the statistic ( e.g. pdf of the mean) of the data.
-
-If we have a data set with n repeated measurements, a bootstrap sample is an array of length n that was drawn from the original data with replacement.
-
-A bootstrap replicate is a single value of a statistic computed from a bootstrap sample.
-
-'''
-
 # Set default Seaborn style
 sns.set()
 
