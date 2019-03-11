@@ -2,10 +2,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-# Considering the problem of deciding if the pdf of two data sets are the same.
-#	>> start  by concatenate two data samples
-#	>> do permutation of the combined sample
-
 # Set default Seaborn style
 sns.set()
 
