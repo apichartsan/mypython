@@ -70,6 +70,10 @@ if False:
 	for r in house:
 		print ("the " + str(r[0]) + " is " + str(r[1]) + " sqm")
 
+
+##--------------------------##
+## Loop over dictionary
+##--------------------------##
 if False:
 	# disctionary >> use .item() method
 	world = {'afghanistan':30.55,
@@ -80,7 +84,29 @@ if False:
 	for key, val in world.items():
 		print key, val
 
+if False:
+	# Definition of dictionary
+	europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin',
+		'norway':'oslo', 'italy':'rome', 'poland':'warsaw', 'austria':'vienna' }
 
+	# Iterate over europe
+	for key, val in europe.items():
+		print ("the capital of ", key, " is ", val)
+	# Notice that the order of the printouts doesn't necessarily correspond with the order used when defining europe. Remember: dictionaries are inherently unordered!
+
+
+##--------------------------##
+## Loop over numpy array
+##--------------------------##
+
+# 1D array
+if False:
+	import numpy as np
+	np_height = np.array([1.73, 1.68, 1.71, 1.89, 1.79])
+	for x in np_height :
+		print x
+
+# 2D array # use function np.nditer()
 if False:
 	# np array
 	import numpy as np
@@ -96,6 +122,24 @@ if False:
 	# use function np.nditer()
 	for val in np.nditer(meas):
 		print val
+
+if False:
+	# Import numpy as np
+	import numpy as np
+	np_height = np.array([1.73, 1.68, 1.71, 1.89, 1.79])
+	mp_weight = np.array([65.4, 59.2, 63.6, 88.4, 68.7])
+	np_baseball = np.array([np_height,mp_weight])
+	
+	# For loop over np_height
+	for x in np_height:
+		print x,"inches",
+
+	print ''
+	# For loop over np_baseball
+	for x in np.nditer(np_baseball):
+		print x,
+
+
 
 
 
