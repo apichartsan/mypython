@@ -1,13 +1,15 @@
 
-##----------------------------------##
-## Loop over DataFrame : iterrows()
-##----------------------------------##
 
 import numpy as np
 import pandas as pd
 
 # Import cars data
 cars = pd.read_csv('cars.csv', index_col = 0)
+
+
+##----------------------------------##
+## Loop over DataFrame : iterrows()
+##----------------------------------##
 
 if False:
 	# Iterate over rows of cars
