@@ -83,6 +83,13 @@ if False:
 	print world.items()
 	for key, val in world.items():
 		print key, val
+	for key in world.iterkeys():
+		print key, world[key]
+
+	# but note that dictionaries are unordered and any change may result in different indices for all items
+	for index, key in enumerate(dict):
+		print index, key
+
 
 if False:
 	# Definition of dictionary
