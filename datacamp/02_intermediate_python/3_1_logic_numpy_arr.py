@@ -128,8 +128,25 @@ if False:
 	print ( np.logical_and(my_house<11,your_house<11) )
 
 
+if True:
+	import numpy as np
+	# how about 2-d array ==> matrix
+	a1d = np.array([3,33,333])
+	print a1d
+	print type(a1d)
+	print a1d.shape
+	print a1d[0], a1d[1], a1d[2]
 
-
+	b2d = np.array([[11,12,13],[21,22,23]])
+	print b2d
+	print type(b2d)
+	print b2d.shape
+	print ' to access elements >> b2d[0,0]'
+	print b2d[0,0],b2d[0,1],b2d[0,2]
+	print b2d[1,0],b2d[1,1],b2d[1,2]
+	print ' another way to access elements >> b2d[0][0]'
+	print b2d[0][0],b2d[0][1],b2d[0][2]
+	print b2d[1][0],b2d[1][1],b2d[1][2]
 
 
 
