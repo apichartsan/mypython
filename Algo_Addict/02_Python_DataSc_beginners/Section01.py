@@ -68,6 +68,22 @@
  
 
     OK. I think we are good to go. !!!
+	
+	
+	## 2019_05_11 
+	I install imageio and scikit-image, as usual using pip
+	
+	$ sudo pip install imageio
+	
+	When trying to install scikit-image I forgot 'sudo' and I got the error
+	
+	$ pip install scikit-image
+	  : Could not install packages due to an EnvironmentError: [Errno 13] Permission denied: '/Library/Python/2.7/site-packages/cloudpickle'
+	  : Consider using the `--user` option or check the permissions.
+	
+	So I use the following and it worked !
+	
+	$ pip install scikit-image --user
 
 '''
 
